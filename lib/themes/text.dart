@@ -1,6 +1,17 @@
+import 'package:kalkulator_zat_besi/constan.dart';
 import 'package:kalkulator_zat_besi/shared/package.dart';
 
 class MyText {
+  static TextStyle customSize(
+      {required double size, Color color = Colors.black, String? fontFamily}) {
+    return TextStyle(
+        fontSize: size,
+        height: 0.7,
+        fontWeight: FontWeight.w400,
+        color: color,
+        fontFamily: fontFamily ?? Constan.defaultFontFamily);
+  }
+
   static TextStyle oversize({Color color = Colors.black}) {
     return TextStyle(fontSize: 100, fontWeight: FontWeight.w700, color: color);
   }

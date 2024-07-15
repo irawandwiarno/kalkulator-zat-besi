@@ -1,5 +1,6 @@
 import 'package:kalkulator_zat_besi/pages/cek_zat_besi/cek_zat_binding.dart';
 import 'package:kalkulator_zat_besi/pages/cek_zat_besi/cek_zat_view.dart';
+import 'package:kalkulator_zat_besi/routes/app_page.dart';
 import 'package:kalkulator_zat_besi/shared/package.dart';
 
 void main() {
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Kalkulator',
       theme: ThemeData(fontFamily: "NunitoSans"),
       home: CekZatView(),
+      getPages: AppPages.pages,
       initialBinding: CekZatBinding(),
     );
   }

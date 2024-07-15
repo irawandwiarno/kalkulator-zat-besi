@@ -1,4 +1,7 @@
+import 'package:kalkulator_zat_besi/routes/route_name.dart';
+import 'package:kalkulator_zat_besi/service/shered_preference/shared_pref.dart';
 import 'package:kalkulator_zat_besi/shared/package.dart';
+import 'package:kalkulator_zat_besi/widget/gap.dart';
 
 class CekZatController extends GetxController {
   TextEditingController genderController = TextEditingController();
@@ -17,9 +20,8 @@ class CekZatController extends GetxController {
   var itemStatus = ["Lajang", "Hamil", "Menyusui"];
 
   void cekButton() {
-
-    if(!validateInputs()){
-      print('belum di isi');
+    if (!validateInputs()) {
+      popUpAlert();
       return;
     }
 
@@ -34,17 +36,23 @@ class CekZatController extends GetxController {
 
     if (status == itemStatus[1]) {
       pregnant = true;
-    }else if (status == itemStatus[2]) {
+    } else if (status == itemStatus[2]) {
       breastfeeding = true;
     }
-    var kebutuhanZatBesi = getIronRequirement(gender, usia, breastfeeding: breastfeeding, pregnant: pregnant);
-    if(kebutuhanZatBesi == -1.0){
+    var kebutuhanZatBesi = getIronRequirement(gender, usia,
+        breastfeeding: breastfeeding, pregnant: pregnant);
+    if (kebutuhanZatBesi == -1.0) {
       print("tidak ketemu");
+      return;
     }
 
+    if (kebutuhanZatBesi > 0) {
+      Preferences().setZatBesi(kebutuhanZatBesi);
+      print('setted');
+    }
     print("kebutuhan zat besi : $kebutuhanZatBesi");
 
-
+    Get.toNamed(RouteName.result);
   }
 
   bool validateInputs() {
@@ -55,9 +63,13 @@ class CekZatController extends GetxController {
         valueDropdownGender.value.isEmpty) {
       return false;
     }
+    if (valueDropdownGender.value == itemGender[1]) {
+      if (valueDropdownStatus.value.isEmpty) {
+        return false;
+      }
+    }
     return true;
   }
-
 
   Map<String, Map<String, double>> ironRequirements = {
     'pria': {
@@ -117,5 +129,30 @@ class CekZatController extends GetxController {
       }
     }
     return -1.0; // Nilai default jika data tidak ditemukan
+  }
+
+  // ======================================================================
+  // =========================== WIDGET ===================================
+  // ======================================================================
+
+  void popUpAlert() {
+    Get.dialog(Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(
+            "assets/images/upps.png",
+            width: 200,
+          ),
+          Gap.h(200)
+        ],
+      ),
+    ));
+
+    Future.delayed(Duration(seconds: 1), () {
+      if (Get.isDialogOpen == true) {
+        Get.back(); // Close the dialog
+      }
+    });
   }
 }

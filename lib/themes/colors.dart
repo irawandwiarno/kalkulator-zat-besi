@@ -6,6 +6,7 @@ class MyColors {
   static const Color disable = Color(0xFF505050);
   static const Color gradienKanan = Color(0xFF5E2D2D);
   static const Color gradienKiri = Color(0xFFB73131);
+  static const Color cardGrey = Color(0xFFD9D9D9);
 
   static const LinearGradient primaryGradien = LinearGradient(
     colors: [

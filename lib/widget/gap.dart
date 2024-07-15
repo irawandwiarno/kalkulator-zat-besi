@@ -16,7 +16,7 @@ class Gap extends StatelessWidget {
 
   ///Custom width
   static Widget w(width){
-    return SizedBox(height: width,);
+    return SizedBox(width: width,);
   }
 
   ///Sizebox dengan hight 10
@@ -34,4 +34,8 @@ class Gap extends StatelessWidget {
     return SizedBox(height: 20,);
   }
 
+  ///Sizebox dengan width 10
+  static Widget w10(){
+    return SizedBox(width: 10,);
+  }
 }

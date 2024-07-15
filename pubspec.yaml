@@ -17,6 +17,8 @@ dependencies:
   get: ^4.6.6
   gradient_elevated_button: ^1.0.0
   dropdown_button2: ^2.3.9
+  shared_preferences: ^2.2.3
+  intl: ^0.19.0
 
 dev_dependencies:
   flutter_test:
@@ -47,6 +49,9 @@ flutter:
         - asset: assets/fonts/NunitoSans_10pt-Regular.ttf
         - asset: assets/fonts/NunitoSans_10pt-SemiBold.ttf
         - asset: assets/fonts/NunitoSans_10pt-SemiBoldItalic.ttf
+    - family: Dangrek
+      fonts:
+        - asset: assets/fonts/Dangrek-Regular.ttf
 
   # fonts:
   #   - family: Schyler

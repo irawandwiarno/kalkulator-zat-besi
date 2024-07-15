@@ -49,45 +49,57 @@ class CekZatView extends GetView<CekZatController> {
               ),
               Obx(() => controller.valueDropdownGender == "Wanita"
                   ? Column(
-                    children: [
-                      Gap.h10(),
-                      TextFieldDropdown(
+                      children: [
+                        Gap.h10(),
+                        TextFieldDropdown(
                           selectedValue: controller.valueDropdownStatus,
                           items: controller.itemStatus,
                           onSaved: (value) {},
                           hint: "Status",
                         ),
-                    ],
-                  )
+                      ],
+                    )
                   : Container()),
               Gap.h10(),
               TextFieldWithSatuan(
                 controller: controller.usiaController,
                 title: "Usia",
                 satuan: "Tahun",
+                isNumber: true,
               ),
               Gap.h10(),
               TextFieldWithSatuan(
                 controller: controller.bbController,
                 title: "Berat Badan",
                 satuan: "Kg",
+                isNumber: true,
               ),
               Gap.h10(),
               TextFieldWithSatuan(
                 controller: controller.tbController,
                 title: "Tinggi Badan",
                 satuan: "Cm",
+                isNumber: true,
               ),
               Gap.h10(),
               TextFieldWithSatuan(
                 controller: controller.hbController,
                 title: "Nilai Hb",
                 satuan: "Gr/dl.",
+                isNumber: true,
               ),
               Gap.h20(),
               PrimaryButton(
                   title: "Cek Sekarang",
-                  onPressed: ()=>controller.cekButton())
+                  onPressed: () => controller.cekButton()),
+              Gap.h(140),
+              Container(
+                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                child: Image.asset(
+                  "assets/images/logo.png",
+                  width: 150,
+                ),
+              ),
             ],
           ),
         ),
