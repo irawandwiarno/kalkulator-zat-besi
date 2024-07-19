@@ -19,6 +19,10 @@ class Gap extends StatelessWidget {
     return SizedBox(width: width,);
   }
 
+  ///Sizebox dengan hight 5
+  static Widget h5(){
+    return SizedBox(height: 5,);
+  }
   ///Sizebox dengan hight 10
   static Widget h10(){
     return SizedBox(height: 10,);
@@ -34,6 +38,10 @@ class Gap extends StatelessWidget {
     return SizedBox(height: 20,);
   }
 
+  ///Sizebox dengan width 5
+  static Widget w5(){
+    return SizedBox(width: 5,);
+  }
   ///Sizebox dengan width 10
   static Widget w10(){
     return SizedBox(width: 10,);

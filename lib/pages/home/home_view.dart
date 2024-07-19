@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kalkulator_zat_besi/pages/artikel_page/artikel_view.dart';
 import 'package:kalkulator_zat_besi/pages/informasi_page/informasi_view.dart';
 import 'package:kalkulator_zat_besi/routes/route_name.dart';
 import 'package:kalkulator_zat_besi/shared/package.dart';
@@ -78,7 +79,9 @@ class HomeView extends StatelessWidget {
                             type: 2),
                         Gap.h20(),
                         InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Get.to(() => const ArtikelView());
+                          },
                           child: const Text(
                             "Baca Artikel",
                             style: TextStyle(
