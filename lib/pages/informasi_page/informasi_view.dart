@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kalkulator_zat_besi/pages/cek_zat_besi/cek_zat_view.dart';
+import 'package:kalkulator_zat_besi/routes/route_name.dart';
 import 'package:kalkulator_zat_besi/shared/package.dart';
 import 'package:kalkulator_zat_besi/widget/PrimaryButton.dart';
 import 'package:kalkulator_zat_besi/widget/gap.dart';
@@ -96,7 +97,7 @@ class InformasiView extends StatelessWidget {
                 PrimaryButton(
                   title: "Mulai",
                   onPressed: () {
-                    Get.to(() => const CekZatView());
+                    Get.toNamed(RouteName.cek);
                   },
                 )
               ],

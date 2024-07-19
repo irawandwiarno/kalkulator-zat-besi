@@ -11,6 +11,7 @@ class HasilCekView extends GetView<HasilCekController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: MyColors.backgroundApp,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -22,7 +23,7 @@ class HasilCekView extends GetView<HasilCekController> {
                     Container(
                       child: Image.asset(
                         "assets/images/vector_hai.png",
-                        cacheHeight: 200,
+                        fit: BoxFit.fill,
                       ),
                     ),
                     Text(

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:kalkulator_zat_besi/pages/informasi_page/informasi_view.dart';
+import 'package:kalkulator_zat_besi/routes/route_name.dart';
 import 'package:kalkulator_zat_besi/shared/package.dart';
 import 'package:kalkulator_zat_besi/themes/colors.dart';
 import 'package:kalkulator_zat_besi/widget/HomeButton.dart';
+import 'package:kalkulator_zat_besi/widget/PrimaryButton.dart';
 import 'package:kalkulator_zat_besi/widget/gap.dart';
 
 class HomeView extends StatelessWidget {
@@ -62,18 +64,19 @@ class HomeView extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        HomeButton(
+                        PrimaryButton(
                             title: "Cek kebutuhan zat gizi",
+                            rounded: 21,
+                            contentPadding: 10,
                             onPressed: () {
-                              Get.to(() => const InformasiView());
-                            },
-                            type: 1),
-                        Gap.h(10),
-                        HomeButton(
+                              Get.toNamed(RouteName.info);
+                            }),
+                        Gap.h10(),
+                        OutlineGradientButton(
                             title: "Daftar asupan zat gizi",
-                            onPressed: () {},
+                            onPressed: (){},
                             type: 2),
-                        Gap.h(20),
+                        Gap.h20(),
                         InkWell(
                           onTap: () {},
                           child: const Text(

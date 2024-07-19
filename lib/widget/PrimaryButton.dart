@@ -5,11 +5,15 @@ import 'package:kalkulator_zat_besi/themes/themes.dart';
 class PrimaryButton extends StatelessWidget {
   final String title;
   final VoidCallback onPressed;
+  double? rounded;
+  double? contentPadding;
 
-  const PrimaryButton({
+  PrimaryButton({
     Key? key,
     required this.title,
     required this.onPressed,
+    this.rounded,
+    this.contentPadding,
   }) : super(key: key);
 
   @override
@@ -23,11 +27,11 @@ class PrimaryButton extends StatelessWidget {
           gradient: MyColors.primaryGradien,
           foregroundColor: Colors.white, // Warna teks
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15), // Bentuk sudut tombol
+            borderRadius: BorderRadius.circular(rounded ?? 15),
           ),
-          padding: const EdgeInsets.symmetric(vertical: 15), // Padding di dalam tombol
+          padding: EdgeInsets.symmetric(vertical: contentPadding ?? 15),
         ),
-        child: Text(title, style: MyText.title(color: Colors.white),), // Teks di dalam tombol
+        child: Text(title, style: MyText.title(color: Colors.white),),
       ),
     );
   }
