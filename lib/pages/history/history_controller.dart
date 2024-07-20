@@ -26,21 +26,15 @@ class HistoryController extends GetxController {
   var nameDay = "".obs;
   var tanggalLabel = "".obs;
 
-
   @override
   void onInit() async {
     kebutuhanIron.value = await Preferences().getZatBesi();
-    if (kebutuhanIron.value == 0.0) {
-      Get.offNamed(RouteName.cek);
-      // return;
-    }
 
     extrakDateTime(curentDate.value);
 
     konsumHariIni = await dbHelper.getAllByDate(now);
     if (konsumHariIni != null) {
       dataKonsumsi.addAll(konsumHariIni!.dataKonsumsi);
-
     }
     initConsumIfNull();
     listWidgetFoodConsume.clear();
@@ -59,7 +53,7 @@ class HistoryController extends GetxController {
     super.onInit();
   }
 
-  void buildListMakanan(){
+  void buildListMakanan() {
     listWidgetFoodConsume.clear();
     for (var data in dataKonsumsi) {
       listWidgetFoodConsume.add(creadeWidgetContainer(data: data));
@@ -74,7 +68,6 @@ class HistoryController extends GetxController {
     initConsumIfNull();
     if (konsumHariIni != null) {
       dataKonsumsi.addAll(konsumHariIni!.dataKonsumsi);
-
     }
     buildListMakanan();
   }
@@ -163,7 +156,7 @@ class HistoryController extends GetxController {
 
   double kekuranganZatBesiHariIni() {
     var jumIr = totalJumlahIron();
-    var kebIr =  kebutuhanIron.value;
+    var kebIr = kebutuhanIron.value;
     return kebIr - jumIr;
   }
 
@@ -171,7 +164,8 @@ class HistoryController extends GetxController {
     return data[namaMakanan] - 1;
   }
 
-  void showTotalZatBesi() {
+  void showTotalZatBesi() async {
+    kebutuhanIron.value = await Preferences().getZatBesi();
     var total = formatDouble(totalJumlahIron());
     String displayName = total.length > 4 ? '${total.substring(0, 4)}' : total;
     if (displayName.endsWith(",")) {

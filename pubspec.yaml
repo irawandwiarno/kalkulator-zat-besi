@@ -24,6 +24,7 @@ dependencies:
   universal_platform: ^1.0.0
   calendar_date_picker2: ^1.1.5
   indonesia: ^2.0.0
+  sidebarx: ^0.17.1
 
 dev_dependencies:
   flutter_test:

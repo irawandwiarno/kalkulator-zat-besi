@@ -5,4 +5,5 @@ abstract class RouteName {
   static const info = '/info';
   static const history = '/history';
   static const search = '/search';
+  static const artikel = '/artikel';
 }

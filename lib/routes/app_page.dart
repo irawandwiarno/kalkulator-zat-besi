@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:kalkulator_zat_besi/pages/artikel_page/artikel_view.dart';
 import 'package:kalkulator_zat_besi/pages/cek_zat_besi/cek_zat_binding.dart';
 import 'package:kalkulator_zat_besi/pages/cek_zat_besi/cek_zat_view.dart';
 import 'package:kalkulator_zat_besi/pages/hasil_cek/hasil_cek_binding.dart';
@@ -42,6 +43,10 @@ class AppPages {
     GetPage(
       name: RouteName.info,
       page: () => InformasiView(),
+    ),
+    GetPage(
+      name: RouteName.artikel,
+      page: () => ArtikelView(),
     ),
   ];
 }

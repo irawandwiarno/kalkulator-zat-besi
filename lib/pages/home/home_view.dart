@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kalkulator_zat_besi/pages/artikel_page/artikel_view.dart';
 import 'package:kalkulator_zat_besi/pages/informasi_page/informasi_view.dart';
 import 'package:kalkulator_zat_besi/routes/route_name.dart';
+import 'package:kalkulator_zat_besi/service/shered_preference/shared_pref.dart';
 import 'package:kalkulator_zat_besi/shared/package.dart';
 import 'package:kalkulator_zat_besi/themes/colors.dart';
 import 'package:kalkulator_zat_besi/widget/HomeButton.dart';
@@ -75,12 +76,20 @@ class HomeView extends StatelessWidget {
                         Gap.h10(),
                         OutlineGradientButton(
                             title: "Daftar asupan zat gizi",
-                            onPressed: ()=>Get.toNamed(RouteName.history),
+                            onPressed: () async {
+                              var kebutuhanIron =
+                                  await Preferences().getZatBesi();
+                              if (kebutuhanIron == 0.0) {
+                                Get.toNamed(RouteName.cek);
+                              } else {
+                                Get.toNamed(RouteName.history);
+                              }
+                            },
                             type: 2),
                         Gap.h20(),
                         InkWell(
                           onTap: () {
-                            Get.to(() => const ArtikelView());
+                            Get.toNamed(RouteName.artikel);
                           },
                           child: const Text(
                             "Baca Artikel",

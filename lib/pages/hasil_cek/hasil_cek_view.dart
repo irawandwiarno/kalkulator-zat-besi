@@ -116,7 +116,10 @@ class HasilCekView extends GetView<HasilCekController> {
                             color: Colors.black),
                       ),
                       Gap.h20(),
-                      PrimaryButton(title: "Cari Tahu Sekarang", onPressed: ()=>Get.toNamed(RouteName.history))
+                      PrimaryButton(title: "Cari Tahu Sekarang", onPressed: (){
+                        Get.offAllNamed(RouteName.home);
+                        Get.toNamed(RouteName.history);
+                      })
                     ],
                   ),
                 ),
