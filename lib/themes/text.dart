@@ -3,11 +3,14 @@ import 'package:kalkulator_zat_besi/shared/package.dart';
 
 class MyText {
   static TextStyle customSize(
-      {required double size, Color color = Colors.black, String? fontFamily}) {
+      {required double size,
+      Color color = Colors.black,
+      String? fontFamily,
+      FontWeight? fontWeight}) {
     return TextStyle(
         fontSize: size,
         height: 0.7,
-        fontWeight: FontWeight.w400,
+        fontWeight: fontWeight ?? FontWeight.w400,
         color: color,
         fontFamily: fontFamily ?? Constan.defaultFontFamily);
   }

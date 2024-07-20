@@ -20,6 +20,10 @@ dependencies:
   shared_preferences: ^2.2.3
   intl: ^0.19.0
   url_launcher: ^6.3.0
+  path_provider: ^2.0.8
+  universal_platform: ^1.0.0
+  calendar_date_picker2: ^1.1.5
+  indonesia: ^2.0.0
 
 dev_dependencies:
   flutter_test:
@@ -29,6 +33,8 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    - assets/food_data.json
+    - assets/data_index.json
     - assets/images/
 
   fonts:
@@ -50,6 +56,22 @@ flutter:
         - asset: assets/fonts/NunitoSans_10pt-Regular.ttf
         - asset: assets/fonts/NunitoSans_10pt-SemiBold.ttf
         - asset: assets/fonts/NunitoSans_10pt-SemiBoldItalic.ttf
+        - asset: assets/fonts/NunitoSans_7pt-Black.ttf
+        - asset: assets/fonts/NunitoSans_7pt-BlackItalic.ttf
+        - asset: assets/fonts/NunitoSans_7pt-Bold.ttf
+        - asset: assets/fonts/NunitoSans_7pt-BoldItalic.ttf
+        - asset: assets/fonts/NunitoSans_7pt-ExtraBold.ttf
+        - asset: assets/fonts/NunitoSans_7pt-ExtraBoldItalic.ttf
+        - asset: assets/fonts/NunitoSans_7pt-ExtraLight.ttf
+        - asset: assets/fonts/NunitoSans_7pt-ExtraLightItalic.ttf
+        - asset: assets/fonts/NunitoSans_7pt-Italic.ttf
+        - asset: assets/fonts/NunitoSans_7pt-Light.ttf
+        - asset: assets/fonts/NunitoSans_7pt-LightItalic.ttf
+        - asset: assets/fonts/NunitoSans_7pt-Medium.ttf
+        - asset: assets/fonts/NunitoSans_7pt-MediumItalic.ttf
+        - asset: assets/fonts/NunitoSans_7pt-Regular.ttf
+        - asset: assets/fonts/NunitoSans_7pt-SemiBold.ttf
+        - asset: assets/fonts/NunitoSans_7pt-SemiBoldItalic.ttf
     - family: Dangrek
       fonts:
         - asset: assets/fonts/Dangrek-Regular.ttf

@@ -1,4 +1,5 @@
 import 'package:kalkulator_zat_besi/pages/hasil_cek/hasil_cek_controller.dart';
+import 'package:kalkulator_zat_besi/routes/route_name.dart';
 import 'package:kalkulator_zat_besi/shared/package.dart';
 import 'package:kalkulator_zat_besi/themes/colors.dart';
 import 'package:kalkulator_zat_besi/themes/text.dart';
@@ -115,7 +116,7 @@ class HasilCekView extends GetView<HasilCekController> {
                             color: Colors.black),
                       ),
                       Gap.h20(),
-                      PrimaryButton(title: "Cari Tahu Sekarang", onPressed: () {})
+                      PrimaryButton(title: "Cari Tahu Sekarang", onPressed: ()=>Get.toNamed(RouteName.history))
                     ],
                   ),
                 ),

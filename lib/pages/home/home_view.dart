@@ -75,7 +75,7 @@ class HomeView extends StatelessWidget {
                         Gap.h10(),
                         OutlineGradientButton(
                             title: "Daftar asupan zat gizi",
-                            onPressed: (){},
+                            onPressed: ()=>Get.toNamed(RouteName.history),
                             type: 2),
                         Gap.h20(),
                         InkWell(

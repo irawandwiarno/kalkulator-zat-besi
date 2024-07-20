@@ -10,9 +10,9 @@ class Preferences {
     await prefs.setDouble('zatBesi', value);
   }
 
-  Future<double?> getZatBesi() async {
+  Future<double> getZatBesi() async {
     final prefs = await getPrefs();
-    return prefs.getDouble('zatBesi');
+    return prefs.getDouble('zatBesi') ?? 0.0;
   }
 }
 
