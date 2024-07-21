@@ -17,7 +17,6 @@ class HomeController extends GetxController {
       listNamaMakanan.add(makanan["name"]);
     }
 
-    print('${listNamaMakanan.toString()}');
     super.onInit();
   }
 }

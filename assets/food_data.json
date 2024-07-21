@@ -1937,7 +1937,7 @@
         },
         {
             "id": 130,
-            "name": "Lemak_per_Minyak Margarine",
+            "name": "Lemak/Minyak Margarine",
             "string_kandungan_per_100": ",05 mg",
             "kandungan_100gr": 0.05,
             "perporsi": 30,
@@ -2612,7 +2612,7 @@
         },
         {
             "id": 175,
-            "name": "Nervita]\n\n",
+            "name": "Nervita",
             "string_kandungan_per_100": "0,1 mg",
             "kandungan_100gr": 0.1,
             "perporsi": 250,

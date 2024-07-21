@@ -14,5 +14,15 @@ class Preferences {
     final prefs = await getPrefs();
     return prefs.getDouble('zatBesi') ?? 0.0;
   }
+
+  Future<void> setIsExpired(bool value) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool("isExpired", value);
+  }
+
+  Future<bool?> getIsExpired() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getBool("isExpired");
+  }
 }
 
