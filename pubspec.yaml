@@ -43,6 +43,8 @@ flutter:
   assets:
     - assets/food_data.json
     - assets/data_index.json
+    - assets/pertanyaan1.json
+    - assets/pertanyaan2.json
     - assets/images/
     - assets/icon/
 

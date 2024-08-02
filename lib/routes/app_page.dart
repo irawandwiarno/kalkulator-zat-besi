@@ -9,6 +9,7 @@ import 'package:kalkulator_zat_besi/pages/history/history_view.dart';
 import 'package:kalkulator_zat_besi/pages/home/home_binding.dart';
 import 'package:kalkulator_zat_besi/pages/home/home_view.dart';
 import 'package:kalkulator_zat_besi/pages/informasi_page/informasi_view.dart';
+import 'package:kalkulator_zat_besi/pages/kuisioner/kuisioner_view.dart';
 import 'package:kalkulator_zat_besi/pages/search/search_binding.dart';
 import 'package:kalkulator_zat_besi/pages/search/search_view.dart';
 import 'package:kalkulator_zat_besi/routes/route_name.dart';
@@ -47,6 +48,10 @@ class AppPages {
     GetPage(
       name: RouteName.artikel,
       page: () => ArtikelView(),
+    ),
+    GetPage(
+      name: RouteName.kuisioner,
+      page: () => QuestionnairePage(),
     ),
   ];
 }

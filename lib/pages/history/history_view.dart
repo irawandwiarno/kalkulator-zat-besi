@@ -17,7 +17,8 @@ class HistoryView extends GetView<HistoryController> {
       backgroundColor: MyColors.backgroundApp,
       drawer: SidebarX(
         extendedTheme: SidebarXTheme(
-            width: 200, ),
+          width: 200,
+        ),
         footerDivider: Container(
             height: 100,
             child: Center(
@@ -28,15 +29,37 @@ class HistoryView extends GetView<HistoryController> {
         controller: SidebarXController(selectedIndex: 0, extended: true),
         items: [
           SidebarXItem(
-              icon: Icons.search,
+              iconWidget: Padding(
+                padding: EdgeInsets.only(
+                    right: 5), // Adjust padding values as needed
+                child: Icon(Icons.search),
+              ),
               label: 'Cek Kebutuhan Zat Besi',
               onTap: () => Get.toNamed(RouteName.cek)),
           SidebarXItem(
-              icon: Icons.book,
+              iconWidget: Padding(
+                padding: EdgeInsets.only(
+                    right: 5), // Adjust padding values as needed
+                child: Icon(Icons.library_books_rounded),
+              ),
+              label: 'Isi Kuisioner',
+              onTap: () {
+                Get.toNamed(RouteName.kuisioner);
+              }),
+          SidebarXItem(
+              iconWidget: Padding(
+                padding: EdgeInsets.only(
+                    right: 5), // Adjust padding values as needed
+                child: Icon(Icons.menu_book_rounded),
+              ),
               label: 'Baca Artikel',
               onTap: () => Get.toNamed(RouteName.artikel)),
           SidebarXItem(
-              icon: Icons.home,
+              iconWidget: Padding(
+                padding: EdgeInsets.only(
+                    right: 5), // Adjust padding values as needed
+                child: Icon(Icons.home),
+              ),
               label: 'Back to Home',
               onTap: () => Get.offAllNamed(RouteName.home)),
         ],
@@ -325,9 +348,10 @@ class HistoryView extends GetView<HistoryController> {
             children: [
               Obx(
                 () => Text("${controller.totolZatBesi}",
-                    style: const TextStyle(
+                    style: TextStyle(
                         height: 0.8,
-                        fontSize: 90,
+                        fontSize:
+                            controller.totolZatBesi.value.length > 3 ? 75 : 90,
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
                         fontFamily: "Dangrek")),

@@ -1,0 +1,139 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "soal": "Menurut kamu apakah itu anemia?",
+            "pilihan": [
+                "Kurangnya kadar Hb dalam darah",
+                "Kurang darah",
+                "Darah rendah",
+                "Tidak tahu"
+            ],
+            "jawaban": []
+        },
+        {
+            "id": 2,
+            "soal": "Menurut kamu apa saja penyebab anemia? (jawaban boleh lebih dari satu)",
+            "pilihan": [
+                "Penyakit seperti cacingan, malaria dan TBC",
+                "Menstruasi",
+                "Kurangnya konsumsi makanan yang mengandung zat besi atau Fe",
+                "Perdarahan",
+                "Kurangnya konsumsi makanan yang mengandung protein",
+                "Terlalu banyak makanan berlemak",
+                "Tidak tahu"
+            ],
+            "jawaban": []
+        },
+        {
+            "id": 3,
+            "soal": "Menurut kamu bagaimana cara mengetahui anemia? (jawaban boleh lebih dari satu)",
+            "pilihan": [
+                "Periksa darah untuk mengetahui kadar Hb",
+                "Melihat ciri-ciri fisik (kulit dan telapak tangan pucat)",
+                "Merasa sering pusing",
+                "Mata sering berkunang-kunang",
+                "Mengecek apakah ada bintik-bintik merah di kulit",
+                "Sering merasa mual",
+                "Tidak tahu"
+            ],
+            "jawaban": []
+        },
+        {
+            "id": 4,
+            "soal": "Menurut kamu apa saja sumber zat besi yang berasal dari makanan ? (jawaban boleh lebih dari satu)",
+            "pilihan": [
+                "Daging",
+                "Ikan",
+                "Hati",
+                "Ayam",
+                "Telur",
+                "Kentang",
+                "Kacang tanah",
+                "Daun singkong",
+                "Bayam",
+                "Jambu",
+                "Tomat",
+                "Jeruk",
+                "Wortel",
+                "Tidak tahu"
+            ],
+            "jawaban": []
+        },
+        {
+            "id": 5,
+            "soal": "Menurut kamu gejala apa saja yang ditimbulkan oleh anemia? (jawaban boleh lebih dari satu)",
+            "pilihan": [
+                "Pusing",
+                "Mata berkunang-kunang",
+                "Kelopak mata dan kulit menjadi pucat",
+                "Lesu",
+                "Lemah",
+                "Letih",
+                "Lelah",
+                "Lalai",
+                "Berat badan turun",
+                "Bintik-bintik merah di kulit",
+                "Rasa pahit di mulut",
+                "Tidak Tahu"
+            ],
+            "jawaban": []
+        },
+        {
+            "id": 6,
+            "soal": "Menurut kamu apa dampak anemia terhadap prestasi belajar?",
+            "pilihan": [
+                "Tidak berpengaruh",
+                "Menurun",
+                "Meningkat",
+                "Tidak tahu"
+            ],
+            "jawaban": []
+        },
+        {
+            "id": 7,
+            "soal": "Menurut kamu apakah anemia dapat dicegah?",
+            "pilihan": [
+                "Ya",
+                "Tidak",
+                "Tidak Tahu"
+            ],
+            "jawaban": []
+        },
+        {
+            "id": 8,
+            "soal": "Menurut kamu bagaimana caranya untuk mencegah anemia? (jawaban boleh lebih dari satu)",
+            "pilihan": [
+                "Makan sayur dan buah yang banyak mengandung vitamin C",
+                "Menjaga diri dan lingkungan agar bebas cacingan",
+                "Mengkonsumsi ayam, hati dan telur",
+                "Minum Tablet Tambah Darah (TTD)"
+            ],
+            "jawaban": []
+        },
+        {
+            "id": 9,
+            "soal": "Menurut kamu apakah anemia dapat diobati?",
+            "pilihan": [
+                "Ya",
+                "Tidak",
+                "Tidak Tahu"
+            ],
+            "jawaban": []
+        },
+        {
+            "id": 10,
+            "soal": "Menurut kamu bagaimanakah cara mengobati anemia? (jawaban boleh lebih dari satu)",
+            "pilihan": [
+                "Mengobati cacingan, malaria dan penyakit TBC",
+                "Meningkatkan Konsumsi Makanan yang mengandung zat besi",
+                "Menambah pemasukan zat besi dengan minum tablet besi",
+                "Olahraga secara teratur",
+                "Istirahat yang cukup",
+                "Tidak mengkonsumsi makanan berlemak terlalu banyak",
+                "Tidak Tahu"
+            ],
+            "jawaban": []
+        }
+    ]
+}

@@ -6,4 +6,5 @@ abstract class RouteName {
   static const history = '/history';
   static const search = '/search';
   static const artikel = '/artikel';
+  static const kuisioner = '/kuisioner';
 }

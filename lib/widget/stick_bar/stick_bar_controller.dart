@@ -66,7 +66,7 @@ class StickBarController extends GetxController {
       }
       double containerWidth;
       if (totalPresentase + percentage > 100.0) {
-        containerWidth = ((1.0 - totalPresentase) / 100) * screenWidth;
+        containerWidth = ((100 - totalPresentase) / 100) * screenWidth;
       } else {
         containerWidth = (percentage / 100) * screenWidth;
       }

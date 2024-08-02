@@ -1,0 +1,154 @@
+{
+    "data": [
+        {
+            "sub_bab":"Pengertian Umum",
+            "id": 1,
+            "Pernyataan": "Stunting adalah gangguan pertumbuhan pada anak",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Pengertian Umum",
+            "id": "2.",
+            "Pernyataan": "Stunting ditandai dengan tinggi badan yang kurang dari teman-teman sebayanya.",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Pengertian Umum",
+            "id": 3,
+            "Pernyataan": "Anak dengan stunting biasanya disertai dengan gizi buruk.",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Pengertian Umum",
+            "id": 4,
+            "Pernyataan": "Anak perempuan lebih rentan terkena stunting dari pada laki-laki.",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Pengertian Umum",
+            "id": 5,
+            "Pernyataan": "Stunting bukan masalah besar bagi negara.",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Gejala Stunting",
+            "id": 6,
+            "Pernyataan": "Anak dengan stunting biasanya lebih pendiam dari teman-temannya.",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Gejala Stunting",
+            "id": 7,
+            "Pernyataan": "Anak dengan stunting tidak akan mengalami terlambatnya masa pubertas.",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Gejala Stunting",
+            "id": 8,
+            "Pernyataan": "Anak dengan stunting akan sulit menerima pelajaran.",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Gejala Stunting",
+            "id": 9,
+            "Pernyataan": "Salah satu tanda anak stunting antara lain pertumbuhan gigi yang terlambat.",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Gejala Stunting",
+            "id": 10,
+            "Pernyataan": "Pertumbuhan yang terlambat merupakan tanda terjadinya stunting pada anak.",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Penyebab Terjadinya Stunting",
+            "id": 11,
+            "Pernyataan": "Stunting disebabkan kekurangan gizi sejak ibu mengandung hingga umur 2 tahun (1000 Hari Pertama kehidupan).",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Penyebab Terjadinya Stunting",
+            "id": 12,
+            "Pernyataan": "Anak penderita stunting biasanya dari golongan ekonomi bawah.",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Penyebab Terjadinya Stunting",
+            "id": 13,
+            "Pernyataan": "Salah satu faktor penyebab stunting antara lain rendahnya tingkat pendidikan orang tua.",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Penyebab Terjadinya Stunting",
+            "id": 14,
+            "Pernyataan": "Anak yang tinggal di desa lebih rentan terkena stunting daripada yang tinggal di kota.",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Penyebab Terjadinya Stunting",
+            "id": 15,
+            "Pernyataan": "Faktor genetik orang tua mempengaruhi terjadinya stunting pada anak.",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Dampak Terjadinya stunting",
+            "id": 16,
+            "Pernyataan": "Stunting membuat terhambatnya perkembangan otak pada anak.",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Dampak Terjadinya stunting",
+            "id": 17,
+            "Pernyataan": "Anak dengan stunting dibiarkan akan mengakibatkan Sumber daya Manusia (SDM) yang tidak berkualitas",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Dampak Terjadinya stunting",
+            "id": 18,
+            "Pernyataan": "Jika anak dengan stunting dibiarkan,tidak ada dampak buruk bagi anak pada masa dewasanya nanti ",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Dampak Terjadinya stunting",
+            "id": 19,
+            "Pernyataan": "Stunting tidak mempengaruhi kemajuan suatu negara.",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Dampak Terjadinya stunting",
+            "id": 20,
+            "Pernyataan": "Anak dengan stunting memiliki system kekebalan tubuh yang sama daripada anak normal",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Cara Mencegah Stunting",
+            "id": 21,
+            "Pernyataan": "Makan dengan gizi seimbang dapat mencegah terjadinya stunting ",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Cara Mencegah Stunting",
+            "id": 22,
+            "Pernyataan": "Pola asuh dari orang tua tidak mempengaruhi terjadinya anak stunting ",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Cara Mencegah Stunting",
+            "id": 23,
+            "Pernyataan": "Orang tua perlu memantau tumbuh kembang anak untuk mencegah terjadinya stunting",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Cara Mencegah Stunting",
+            "id": 24,
+            "Pernyataan": "Imunisasi lengkap merupakan salah satu pencegahan dari stunting ",
+            "jawaban": null
+        },
+        {
+            "sub_bab":"Cara Mencegah Stunting",
+            "id": 25,
+            "Pernyataan": "Mengajarkan anak mencuci tangan dapat mencegah terjadinya stunting pada anak",
+            "jawaban": null
+        }
+    ]
+}

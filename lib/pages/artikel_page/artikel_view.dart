@@ -649,11 +649,11 @@ class ArtikelView extends StatelessWidget {
   Widget linkText(String text, String url) {
     return InkWell(
         onTap: () async {
-          if (await canLaunch(url)) {
-            await launch(url);
-          } else {
-            throw 'Could not launch $url';
-          }
+            await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+          // if (await canLaunchUrl(Uri.parse(url))) {
+          // } else {
+          //   throw 'Could not launch $url';
+          // }
         },
         child: SizedBox(
           width: MediaQuery.of(Get.context!).size.width,

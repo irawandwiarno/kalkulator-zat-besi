@@ -6,6 +6,7 @@ import 'package:kalkulator_zat_besi/routes/route_name.dart';
 import 'package:kalkulator_zat_besi/service/database/database_helper.dart';
 import 'package:kalkulator_zat_besi/service/shered_preference/shared_pref.dart';
 import 'package:kalkulator_zat_besi/shared/package.dart';
+import 'package:kalkulator_zat_besi/widget/gap.dart';
 import 'package:kalkulator_zat_besi/widget/hex_color.dart';
 import 'package:calendar_date_picker2/calendar_date_picker2.dart';
 
@@ -50,8 +51,37 @@ class HistoryController extends GetxController {
     ever(curentDate, (_) {
       reBuildPage();
     });
+
+    Future.delayed(Duration(seconds: 1), ()async {
+      var total = totalJumlahIron();
+      if (total < kebutuhanIron.value) {
+        popUpAlert();
+      }
+    });
     super.onInit();
   }
+
+  void popUpAlert() {
+    Get.dialog(Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(
+            "assets/images/alert.png",
+            width: 150,
+          ),
+          Gap.h(200)
+        ],
+      ),
+    ));
+
+    Future.delayed(Duration(seconds: 3), () {
+      if (Get.isDialogOpen == true) {
+        Get.back(); // Close the dialog
+      }
+    });
+  }
+
 
   void buildListMakanan() {
     listWidgetFoodConsume.clear();
