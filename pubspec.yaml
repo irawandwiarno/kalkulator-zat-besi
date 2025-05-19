@@ -46,6 +46,7 @@ flutter:
     - assets/pertanyaan1.json
     - assets/pertanyaan2.json
     - assets/images/
+    - assets/images/daftar/
     - assets/icon/
 
   fonts:

@@ -1,3 +1,4 @@
+import 'package:kalkulator_zat_besi/pages/history/daftar_makanan.dart';
 import 'package:kalkulator_zat_besi/pages/history/history_controller.dart';
 import 'package:kalkulator_zat_besi/routes/route_name.dart';
 import 'package:kalkulator_zat_besi/shared/package.dart';
@@ -48,16 +49,14 @@ class HistoryView extends GetView<HistoryController> {
               }),
           SidebarXItem(
               iconWidget: Padding(
-                padding: EdgeInsets.only(
-                    right: 5), // Adjust padding values as needed
+                padding: EdgeInsets.only(right: 5),
                 child: Icon(Icons.menu_book_rounded),
               ),
               label: 'Baca Artikel',
               onTap: () => Get.toNamed(RouteName.artikel)),
           SidebarXItem(
               iconWidget: Padding(
-                padding: EdgeInsets.only(
-                    right: 5), // Adjust padding values as needed
+                padding: EdgeInsets.only(right: 5),
                 child: Icon(Icons.home),
               ),
               label: 'Back to Home',
@@ -258,17 +257,22 @@ class HistoryView extends GetView<HistoryController> {
   }
 
   Widget BoxDirectExel() {
-    return Center(
-      child: Container(
-        decoration: BoxDecoration(
-            color: HexColor.code("D9D9D9"),
-            borderRadius: BorderRadius.circular(5)),
-        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
-        child: const Text(
-          "Cek daftar makanan dan kandungan zat besi",
-          style: TextStyle(
-            fontSize: 12,
-            fontWeight: FontWeight.bold,
+    return GestureDetector(
+      onTap: (){
+        Get.to(DaftarMakanan());
+      },
+      child: Center(
+        child: Container(
+          decoration: BoxDecoration(
+              color: HexColor.code("D9D9D9"),
+              borderRadius: BorderRadius.circular(5)),
+          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+          child: const Text(
+            "Cek daftar makanan dan kandungan zat besi",
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
       ),

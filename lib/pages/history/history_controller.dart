@@ -52,7 +52,7 @@ class HistoryController extends GetxController {
       reBuildPage();
     });
 
-    Future.delayed(Duration(seconds: 1), ()async {
+    Future.delayed(Duration(seconds: 1), () async {
       var total = totalJumlahIron();
       if (total < kebutuhanIron.value) {
         popUpAlert();
@@ -81,7 +81,6 @@ class HistoryController extends GetxController {
       }
     });
   }
-
 
   void buildListMakanan() {
     listWidgetFoodConsume.clear();
@@ -150,18 +149,21 @@ class HistoryController extends GetxController {
     }).toList();
   }
 
-  void addMakanan({required String name, required double beratKonsumsi}) async {
+  void addMakanan({required String name, required double jumlahPorsi}) async {
     initConsumIfNull();
     var dataMakanan = getDataMakananWithName(
         dataIndex: homeController.dataIndexMakanan,
         dataMakanan: homeController.dataMakanan,
         namaMakanan: name);
-    double hasil = hitungZatBesi(
-        beratKonsumsi, (dataMakanan['kandungan_100gr'] as num).toDouble());
+    // double hasil = hitungZatBesi(
+    //     beratKonsumsi, (dataMakanan['kandungan_100gr'] as num).toDouble());
+
+    double hasil = hitungZatBesiPerPorsi(
+        jumlahPorsi, (dataMakanan['kandungan_100gr'] as num).toDouble());
 
     dataKonsumsi.add({
       'name': name,
-      'berat_konsumsi': beratKonsumsi,
+      'berat_konsumsi': jumlahPorsi,
       'jumlah_iron': hasil,
     });
 
@@ -177,6 +179,11 @@ class HistoryController extends GetxController {
   double hitungZatBesi(double beratMakanan, double zatBesiPer100Gr) {
     // Menghitung zat besi berdasarkan berat makanan
     return (beratMakanan / 100) * zatBesiPer100Gr;
+  }
+
+  double hitungZatBesiPerPorsi(double jumlahPorsi, double zatBesiPer100Gr) {
+    // Menghitung zat besi berdasarkan berat makanan
+    return jumlahPorsi * zatBesiPer100Gr;
   }
 
   double totalJumlahIron() {
@@ -257,7 +264,7 @@ class HistoryController extends GetxController {
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              Text("${formatDouble(data["berat_konsumsi"])}gr",
+              Text("${formatDouble((data["berat_konsumsi"] * 100))}gr",
                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.w800)),
               Text("${formatDouble(data['jumlah_iron'])} mg zat besi",
                   style: TextStyle(

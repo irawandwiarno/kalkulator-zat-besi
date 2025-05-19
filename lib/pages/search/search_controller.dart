@@ -22,12 +22,13 @@ class SearchMakananController extends GetxController {
   }
 
   void selectItem({required String value}){
+    _weightController.text = "1";
     _showWeightDialog(value: value);
   }
 
   void _showWeightDialog({required String value}) {
     Get.defaultDialog(
-      title: "Masukkan Berat Makanan",
+      title: "Masukkan Porsi Makanan",
       content: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -35,8 +36,9 @@ class SearchMakananController extends GetxController {
             TextField(
               controller: _weightController,
               keyboardType: TextInputType.number,
+              autofocus: true,
               decoration: InputDecoration(
-                labelText: 'Berat (gr)',
+                labelText: 'Porsi',
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -60,14 +62,13 @@ class SearchMakananController extends GetxController {
             ),
             SizedBox(height: 20.0),
             PrimaryButton(title: "Simpan",  onPressed: () {
-              final weight = _weightController.text;
-              if (weight.isNotEmpty) {
+              final porsi = _weightController.text;
+              if (porsi.isNotEmpty) {
                 HistoryController historyController = Get.find<HistoryController>();
-                print('vvvv $value');
-                  historyController.addMakanan(name: value, beratKonsumsi: double.tryParse(weight) ?? 0);
+                  historyController.addMakanan(name: value, jumlahPorsi: double.tryParse(porsi) ?? 0);
                 Get.until((route) => Get.currentRoute == RouteName.history);
               } else {
-                Get.snackbar("Error", "Berat makanan tidak boleh kosong");
+                Get.snackbar("Error", "Porsi makanan tidak boleh kosong");
               }
             },),
           ],

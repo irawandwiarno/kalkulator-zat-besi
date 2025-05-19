@@ -87,20 +87,20 @@ class HomeView extends StatelessWidget {
                             },
                             type: 2),
                         Gap.h10(),
-                        // OutlineGradientButton(
-                        //     title: "",
-                        //     onPressed: () async {
-                        //       Get.toNamed(RouteName.kuisioner);
-                        //     },
-                        //     type: 2),
+                        OutlineGradientButton(
+                            title: "Isi Kuisioner",
+                            onPressed: () async {
+                              Get.toNamed(RouteName.kuisioner);
+                            },
+                            type: 2),
                         Gap.h20(),
                         InkWell(
                           onTap: () {
-                            // Get.toNamed(RouteName.artikel);
-                            Get.toNamed(RouteName.kuisioner);
+                            Get.toNamed(RouteName.artikel);
+                            // Get.toNamed(RouteName.kuisioner);
                           },
                           child: const Text(
-                            "Isi Kuisioner",
+                            "Baca Artikel",
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.w700,

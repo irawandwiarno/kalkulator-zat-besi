@@ -7,6 +7,9 @@
 - **Kalkulasi Asupan Zat Besi**  
   Masukkan bahan makanan yang dikonsumsi hari ini, dan aplikasi akan menghitung total kandungan zat besi berdasarkan data nutrisi yang akurat.
 
+  <img src="md_assets/pengukuran.png" alt="Pengukuran Zat Besi" width="100"/>
+
+
 - **Analisis Kebutuhan Zat Besi yang Dipersonalisasi**  
   Kebutuhan harian dihitung berdasarkan:
   - Jenis kelamin
@@ -15,11 +18,18 @@
   - Berat badan 
   - Nilai hemoglobin 
 
+
+  <img src="md_assets/hitung.png" alt="Pengukuran Zat Besi" width="100"/>
+
+
 - **Evaluasi Asupan Harian**  
   Tampilkan hasil apakah asupan zat besi Anda:
   - Cukup
   - Kurang
   - Berlebih
+
+
+  <img src="md_assets/hasil.png" alt="Pengukuran Zat Besi" width="100"/>
 
 - **Artikel Edukasi**  
   Dapatkan informasi lengkap dan terpercaya seputar:
@@ -40,4 +50,3 @@ Aplikasi ini dirancang dengan antarmuka yang mudah digunakan, ringan, dan edukat
 
 ---
 
-**Catatan:** Data kandungan zat besi berdasarkan referensi gizi yang valid dan dapat diperbarui sesuai kebutuhan pengguna dan pengembangan aplikasi lebih lanjut.
