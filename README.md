@@ -1,16 +1,43 @@
-# kalkulator_zat_besi
+# Aplikasi Pengukur Zat Besi Harian
 
-A new Flutter project.
+**Aplikasi Pengukur Zat Besi Harian** adalah aplikasi yang dirancang untuk membantu pengguna memantau dan menghitung asupan zat besi harian berdasarkan makanan yang dikonsumsi serta kebutuhan tubuh secara personal.
 
-## Getting Started
+## 🧮 Fitur Utama
 
-This project is a starting point for a Flutter application.
+- **Kalkulasi Asupan Zat Besi**  
+  Masukkan bahan makanan yang dikonsumsi hari ini, dan aplikasi akan menghitung total kandungan zat besi berdasarkan data nutrisi yang akurat.
 
-A few resources to get you started if this is your first Flutter project:
+- **Analisis Kebutuhan Zat Besi yang Dipersonalisasi**  
+  Kebutuhan harian dihitung berdasarkan:
+  - Jenis kelamin
+  - Usia
+  - Tinggi badan 
+  - Berat badan 
+  - Nilai hemoglobin 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Evaluasi Asupan Harian**  
+  Tampilkan hasil apakah asupan zat besi Anda:
+  - Cukup
+  - Kurang
+  - Berlebih
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Artikel Edukasi**  
+  Dapatkan informasi lengkap dan terpercaya seputar:
+  - Fungsi zat besi dalam tubuh
+  - Kebutuhan zat besi berdasarkan usia & kondisi
+  - Dampak kekurangan dan kelebihan zat besi
+  - Tips meningkatkan penyerapan zat besi
+
+## 🎯 Manfaat
+
+- Mencegah anemia defisiensi zat besi
+- Alat bantu edukatif untuk individu maupun tenaga kesehatan
+- Mempermudah pemantauan nutrisi harian secara mandiri
+
+## 📱 Informasi Tambahan
+
+Aplikasi ini dirancang dengan antarmuka yang mudah digunakan, ringan, dan edukatif. Ideal untuk digunakan setiap hari sebagai bagian dari gaya hidup sehat Anda.
+
+---
+
+**Catatan:** Data kandungan zat besi berdasarkan referensi gizi yang valid dan dapat diperbarui sesuai kebutuhan pengguna dan pengembangan aplikasi lebih lanjut.
